@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务中心</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./animate.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+http://115.28.233.164:10003/admin/api/sendMsg
+<body>
+    <div class="main-container-wrap">
+        <div class="main-container">
+            <div class="fuwu-tit wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                <img src="./fuwu_tit.png" alt="">
+            </div>
+            <div class="img-wall wow fadeInUp" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInUp;">
+                <div class="img-wall-item">
+                    <img src="./1.png" alt="">
+                </div>
+                <div class="img-wall-item">
+                    <img src="./2.png" alt="">
+                </div>
+                <div class="img-wall-item">
+                    <img src="./3.png" alt="">
+                </div>
+                <div class="img-wall-item">
+                    <img src="./4.png" alt="">
+                </div>
+            </div>
+            <div class="fuwu-kouhao wow fadeInUp" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInUp;">
+                <p class="fuwu-jiazhi"><span>我们的价值观：</span>建立于客户满意基础上的诚信、创新、结果、坚持。</p>
+                <p>我们本着“客户第一、规范管理、追求卓越”的服务宗旨，向您提供“及时、专业、真诚”的服务，为您创造更多价值。</p>
+            </div>
+            <div class="fuwu-input-box wow fadeInUp" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInUp;">
+                <textarea id="fuwu-input" placeholder="请输入您的问题及意见..."></textarea>
+            </div>
+            <div class="btn-tijiao wow fadeInUp" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInUp;">提交</div>
+        </div>
+    </div>
+    <script src="./wow.min.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        new WOW().init()
+
+        var name = geturl('name');
+        var mobile = geturl('mobile');
+
+        if(name) {
+            $('.btn-tijiao').on('click', function () {
+            var msg = $('#fuwu-input').val();
+            msg = msg +' '+ name +' '+ mobile
+            $.ajax({
+                url: '',
+                type: 'post',
+                dataType: 'json',
+                data: {
+                    webhook: 'https://oapi.dingtalk.com/robot/send?access_token=2014681297808773ad39acc87951083e0f403736a2a98d8de5f6dccdfe78efe5',
+                    msg: msg,
+                },
+                success: function (res) {
+                    console.log('成功')
+                },
+                error: function () {
+                    console.log('失败')
+                }
+            })
+         })
+        }
+        
+
+    </script>
+
+
+</body></html>

@@ -1,0 +1,241 @@
+
+.main-container-wrap {
+    width: 100%;
+    /* height: 1080px; */
+    padding-bottom: 60px;
+    background-image: url(../images/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.main-container {
+    max-width: 1280px;
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.main-school-tit {
+    width: 599px;
+    height: 61px;
+    margin: 55px auto 30px;
+}
+.main-school-tit img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.main-text-tip {
+    font-size: 20px;
+    color: #022222;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.tips {
+    display: inline-block;
+}
+.tips.active {
+    animation: move 5s ease infinite;
+ } 
+@keyframes move {
+    0%,60%{
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+/* 考试模块开始 */
+.main-item {
+    width: 100%;
+    height: auto;
+}
+.main-item-tit {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.main-item-tit p {
+    color: #4285F4;
+    font-size: 20px;
+}
+.main-item-bar {
+    width: 5px;
+    height: 21px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.main-item-bar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.main-item-body-wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 18px 0;
+}
+.main-item-body {
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+.main-item-icon {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 9px;
+}
+.main-item-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.main-item-body a {
+    font-size: 16px;
+    color: #222222;
+}
+.main-item-body a:hover {
+    color: #EA4335;
+}
+.main-item .xinxi {
+    font-size: 20px;
+    color: #EA4335;
+}
+.main-item .deyu {
+    font-size: 20px;
+    color: #4285F4;
+}
+.main-item .qita {
+    font-size: 20px;
+    color: #34A853;
+}
+.main-copy {
+    font-size: 16px;
+    color: #022222;
+    text-align: center;
+    margin-top: 50px;
+}
+/* 考试模块结束 */
+
+
+/* 客服中心开始 */
+.kefu {
+    width: 46px;
+    height: 140px;
+    position: absolute;
+    right: 0;
+    bottom: 129px;
+    background-color: #4285F4;
+    padding: 7px;
+    border-radius: 5px;
+}
+.kefu-img {
+    width: 32px;
+    height: 34px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.kefu-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.kefu p {
+    width: 16px;
+    height: 81px;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 auto;
+    word-wrap:break-word;
+    letter-spacing: 2px;
+}
+/* 客服中心结束 */
+
+
+/* 服务中心页面开始========================== */
+.fuwu-tit {
+    width: 263px;
+    height: 59px;
+    margin: 55px auto 44px;
+}
+.fuwu-tit img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.img-wall {
+    width: 100%;
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-wall-item {
+    width: 300px;
+    height: 340px;
+    overflow: hidden;
+}
+.img-wall-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.fuwu-kouhao {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+.fuwu-kouhao p {
+    font-size: 20px;
+    color: #022222;
+    text-align: center;
+}
+.fuwu-kouhao p span {
+    font-weight: 600;
+}
+.fuwu-jiazhi {
+    margin-bottom: 30px;
+}
+.fuwu-input-box {
+    width: 100%;
+    height: 200px;
+}
+#fuwu-input {
+    width: 100%;
+    height: 200px;
+    appearance: none;
+    border: 2px solid #999999;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    border-radius: 10px;
+    padding: 33px 40px;
+    font-size: 18px;
+    color: #022222;
+}
+.btn-tijiao {
+    width: 180px;
+    height: 60px;
+    display: block;
+    background-color: #4285F4;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 10px;
+    appearance: none;
+    outline: none;
+    border: 1px solid #4285F4;
+    margin: 20px auto;
+}
